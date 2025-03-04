@@ -6,7 +6,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
-
+import numpy
 CLERK_SECRET_KEY = config("CLERK_SECRET_KEY")
 ENVIRONMENT = config("ENVIRONMENT", default="production")
 DOMAIN = config("DOMAIN")
